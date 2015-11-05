@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css" media="all">
+  <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+  <div class="container">
+  <h1>Stocks</h1>
+  <input id="stockName" class="input col-xs-3" type="text" placeholder="Insert Company Name Here:">
+  <button class="btn btn-sm btn-primary col-xs-1" id="getStock">Get Company Info!</button>
+  <br>
+  <br>
+  <div><h3>Click on the stock to get and update pricing info!</h3></div>
+  <table class="table col-xs-12 table-bordered table-striped">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>exchange</td>
+        <td>Symbol</td>
+        <td>Change %</td>
+        <td>YTD Price</td>
+        <td>Open Price</td>
+      </tr>
+    </thead>
+    <tbody class="cardHolder"></tbody>
+  </table>
+</div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
